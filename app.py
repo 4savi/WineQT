@@ -29,4 +29,4 @@ def predict():
     result = model.predict(data1)
     return render_template("index.html",res = result[0])
 if __name__ == "__main__":
-    app.run( debug = True)
+    app.run(host = "localhost",port = 8080, debug = False)
